@@ -11,28 +11,28 @@ def gaji():
     for i in range(len(nama)):
        if nama[i]["gaji"] > 15000000:
             
-          nama[i]["penghasilan"] += nama[i]["gaji"] + nama[i]["gaji"] * 0.1
+          nama[i]["penghasilan"] = nama[i]["gaji"] + nama[i]["gaji"] * 0.1
 
        elif nama[i]["gaji"] < 15000000 and nama[i]["gaji"] >= 10000000:
             
-            nama[i]["penghasilan"] += nama[i]["gaji"] + nama[i]["gaji"] * 0.12
+            nama[i]["penghasilan"] = nama[i]["gaji"] + nama[i]["gaji"] * 0.12
 
        else:
             
-            nama[i]["penghasilan"] += nama[i]["gaji"] + nama[i]["gaji"] * 0.15
+            nama[i]["penghasilan"] = nama[i]["gaji"] + nama[i]["gaji"] * 0.15
 
     for i in range(len(nama)):
        if nama[i]["region"] == "jakarta":
 
-          nama[i]["penghasilan"] += nama[i]["gaji"] - nama[i]["gaji"] * 0.025
+          nama[i]["penghasilan"] = nama[i]["penghasilan"] - nama[i]["gaji"] * 0.025
 
        elif nama[i]["region"] == "bandung":
 
-            nama[i]["penghasilan"] += nama[i]["gaji"] - nama[i]["gaji"] * 0.02
+            nama[i]["penghasilan"] = nama[i]["penghasilan"] - nama[i]["gaji"] * 0.02
 
        else:
 
-            nama[i]["penghasilan"] += nama[i]["gaji"] - nama[i]["gaji"] * 0.018
+            nama[i]["penghasilan"] = nama[i]["penghasilan"] - nama[i]["gaji"] * 0.018
 
     for i in range(len(nama)):
        if nama[i]["jabatan"] == "manager":
