@@ -41,14 +41,18 @@ def gaji():
 
        elif nama[i]["jabatan"] == "ass. manager":
             
-            nama[i]["penghasilan"] += 250000
+            nama[i]["penghasilan"] += 175000
+
+       elif nama[i]["jabatan"] == "senior officer":
+
+           nama[i]["penghasilan"] += 150000
 
        elif nama[i]["jabatan"] == "middle officer":
             
-            nama[i]["penghasilan"] += 250000
+            nama[i]["penghasilan"] += 125000
 
        else:
-            nama[i]["penghasilan"] += 250000
+            nama[i]["penghasilan"] += 100000
 
     for i in range(len(nama)):
             kata_kata = "{0} berpenghasilan Rp.{1} / bulan".format(nama[i]["nama"],int(nama[i]["penghasilan"]))
