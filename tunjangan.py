@@ -59,3 +59,5 @@ def gaji():
      #   print(i)
      #karena ingin dalam bentuk list maka printnya yang bawah. jika ingin hasilnya tidak dalam list uncomment yang 2 line di atas dan comment yang di bawah
     print(hasil)
+
+gaji()

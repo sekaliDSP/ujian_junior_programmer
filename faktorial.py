@@ -6,3 +6,5 @@ def faktor():
         ulang *= i
 
     print(ulang)
+
+faktor()

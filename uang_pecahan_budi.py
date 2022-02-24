@@ -21,3 +21,4 @@ def kembalian():
 
     print("uang kembalian yang diperoleh budi adalah 100.000 sebanyak "+str(seratus)+" 50000 sebanyak "+str(limapuluh)+" 20000 sebanyak "+str(duapuluh)+" 5000 sebanyak "+str(limarb)+" 1000 sebanyak "+str(seribu)+" 50 sebanyak "+str(lp))
 
+kembalian()
