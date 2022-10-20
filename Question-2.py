@@ -1,6 +1,6 @@
 #hello for this script i write it and run it on python 3.10 version.
 #if you want to alter the json you need to alter the function as well as i make this code as simple as it is.
-category = [
+Category = [
     {
         "name":"Buku",
         "childs":[
@@ -525,20 +525,20 @@ category = [
     }
 ]
 
-def listcon(a = [],counted = 0):
+def ListCon(a = [],Counted = 0):
     try:
-        if (counted>len(a)-1):
-            print("habis cuyy")
+        if (Counted>len(a)-1):
+            pass
 
         else:
-            print(a[counted]['name'])
-            print(" "+a[counted]['childs'][0]['name'])
-            print("  "+a[counted]['childs'][0]['childs'][0]['name'])
-            print(" "+a[counted]['childs'][1]['name'])
-            print("  "+a[counted]['childs'][1]['childs'][0]['name']+"\n")
-            counted +=1
-            listcon(category,counted)
+            print(a[Counted]['name'])
+            print(" "+a[Counted]['childs'][0]['name'])
+            print("  "+a[Counted]['childs'][0]['childs'][0]['name'])
+            print(" "+a[Counted]['childs'][1]['name'])
+            print("  "+a[Counted]['childs'][1]['childs'][0]['name']+"\n")
+            Counted +=1
+            ListCon(Category,Counted)
     except Exception as e:
         print(e)
 
-listcon(category)
+ListCon(Category)
